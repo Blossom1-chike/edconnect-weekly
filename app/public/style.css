@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+    margin: 200px 270px 120px 300px;
+    border: 2px solid rebeccapurple;
+    border-width: 7px;
+}
+h3{
+    color: rebeccapurple;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+p{
+    text-indent: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+em{
+    color: rebeccapurple;
+}
