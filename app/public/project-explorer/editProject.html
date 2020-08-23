@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+             <div class="navbar">
+            <a href="index.html">Project Explorer</a>
+            <input type="text" placeholder="Search Projects" id="search_item">
+            <button id="mybutton">Search</button>
+            <a href="search.html">Projects</a>
+            <a href="createProject.html">Submit</a>
+            <div class="icons">
+            <a href="register.html">Signed in As: Ade Ade</a>
+            <a href="login.html">Logout</a>
+            </div>
+            </div>
+        </nav>
+        
+
+        <div class="editProject">
+
+             <h1>Project 4</h1>
+            <div class="editProject_section5">
+
+            <div class="editProject_create">Created By : <br> Ade Ade</div>
+            <div class="editProject_date">Date Created : <br> 2020-08-04</div>
+            <div class="editProject_update">Last Updated : <br> 2020-08-04</div>
+            <button>View Project</button>
+            </div>
+
+        <div class="editProject_section6">
+
+        <div class="edit_section">
+        <h3>Edit Project</h3>
+
+        <hr>
+        <label for="pname">Project Name: </label><br>
+        <input type="text" id="pname" name="pname" placeholder="Project 4"/><br><br>
+
+         <label for="pabstract">Project Abstract: </label><br>
+        <textarea id="pabstract" name="pabstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</textarea><br><br>
+
+        <label for="author">Author(s): </label><br>
+        <input type="text" id="author" rows="4" cols="20"name="author" placeholder="Ade Ade, Brian James"/><br><br>
+
+        <label for="tag">Tag(s): </label><br>
+        <input type="text" id="tag" name="tag" placeholder="#yaml,#ehs"><br><br>
+
+        <button id="edit_save">Save</button>
+        </div>
+
+        <div class="manage_section">
+
+        <h3>Manage Project Files</h3>
+        <hr>
+        <label for="file">Add Project File: </label><br>
+        <input placeholder="Click to Open File Browser" id="input_file"/>
+        <input type="file" id="file" name="file" ><br><br>
+        
+        <hr>
+         <div class="edit_table">
+         <table border="1">
+           <tr>
+               <th>Project Files</th>
+           </tr>
+           <tr>
+               <td rowspan="1">No file uploaded yet</td>
+           </tr>
+       </table>
+       </div>
+        </div>
+        </div>
+
+        </div>
+        <div class="editProject_footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+    </body>
+</html>

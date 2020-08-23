@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+            <a href="index.html">Project Explorer</a>
+            <input type="text" placeholder="Search Projects" id="search_item">
+            <button id="mybutton">Search</button>
+            <a href="search.html">Projects</a>
+            <a href="createProject.html">Submit</a>
+            <div class="icons">
+            <a href="register.html">Signed in As: Ade Ade</a>
+            <a href="login.html">Logout</a>
+            </div>
+            </div>
+        </nav>
+        
+        <div class="createProject">
+        <h1>Submit Project</h1>
+
+        <label for="pname">Project Name: </label><br>
+        <input type="text" id="pname" name="pname" placeholder="Enter Project Name"><br><br>
+
+        <label for="pabstract">Project Abstract: </label><br>
+        <textarea id="pabstract" name="pabstract" rows="2" cols="20">
+        </textarea><br><br>
+
+        <label for="author">Author(s): </label><br>
+        <input type="text" id="author" name="author" placeholder="Enter author names (seperated by comma)"><br><br>
+
+        <label for="tag">Tag(s): </label><br>
+        <input type="text" id="tag" name="tag" placeholder="Use # to tag project with different topics (e.g #javascript #mongodb)"><br><br>
+
+        <button id="createProject_button">Continue</button>
+    </div>
+     <div class="footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+    </body>
+</html>
