@@ -1,82 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <link rel="stylesheet" href="css/bootstrap.min.css">
          <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-           <div class="navbar">
-            <a href="index.html">Project Explorer</a>
-            <input type="text" placeholder="Search Projects" id="search_item">
-            <button id="mybutton">Search</button>
-            <a href="search.html">Projects</a>
-            <a href="createProject.html">Submit</a>
-            <div class="icons">
-            <a href="register.html">Signed in As: Ade Ade</a>
-            <a href="login.html">Logout</a>
-            </div>
+        <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+
+            <a class = "navbar-brand" href="index.html">Project Explorer</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+
+            <form class="form-inline" role="form" name="prp">
+                <div class="form-group">
+                    <li class="nav-item">
+                    <input type="text" class="form-control" placeholder="Search Projects" id="search_item">
+                    </li>
+                </div>
+                    <li class="nav-item">
+                    <button type = "button" class = "btn btn-outline-light" id="mybutton">Search</button>
+                    </li>
+            </form>
+
+            <li class="nav-item">
+            <a href="search.html" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+            <a href="createProject.html" class="nav-link">Submit</a>
+            </li>
+
+            </ul>
+           
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a href="register.html" class="nav-link">Signed in as: <div class="text-white">Ade Ade</div></a>
+            </li>
+
+             <li class="nav-item">
+            <a href="login.html" class="nav-link">Logout</a>
+            </li>
+
+            </ul>
             </div>
         </nav>
+    
 
-        <div class="viewProject">
-        <h1>Project 4</h1>
+        <h3 class="view_h3">Project 4</h3>
 
-        <div class="viewProject_section7">
-
-            <div class="viewProject_create">Created By : <br> Ade Ade</div>
-            <div class="viewProject_date">Date Created : <br> 2020-08-04</div>
-            <div class="viewProject_update">Last Updated : <br> 2020-08-04</div>
-            <button>Edit Project</button>
-         </div>
-
-         <div class="viewProject_section8">
-
-         <div class="viewProject_projectAbstract">
-        <h2>Project Abstract</h2>
-        <hr>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-        ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        laboris nisi ut<br> aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum <br>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-        sunt in culpa qui officia <br>deserunt mollit anim id est laborum.<br>
+        <div class="jumbotron container view">
+            <div class="row">
+                <div class="col view_col1">Created By : <br> Ade Ade</div>
+                <div class="col view_col2">Date Created : <br> 2020-08-04</div>
+                <div class="col view_col3">Last Updated : <br> 2020-08-04</div>
+                <div class="col view_col4"><button class="btn btn-primary">Edit Project</button></div>
+            </div>
         </div>
 
-        <div class="viewProject_projectDetails">
-        <h2>Project Details</h2>
-        <hr>
-        <table border="1">
-            <tr>
-                <th>Author(s)</th>
-            </tr>
-            <tr>
-                <td>Henry James</td>
-            </tr>
-            <tr>
-                <td>Bola Ade</td>
-            </tr>
-            <tr>
-                <td>Bola Ade</td>
-            </tr>
-            <tr>
-                <td id="projectDetails_tag">#yaml, #ejs</td>
-            </tr>
-        </table>
+        <div class="container">
+            <div class="row">
+                <div class="col view_col5">
+                    <h5>Project Abstract</h5>
+                    <hr>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum <br>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>deserunt mollit anim id est laborum.<br>
+                </div>
+                
+                <div class="col view_col6">
+                    <h5>Project Details</h5>
+                    <hr>
 
+                    <div class="card">
+                        <div class="card-header">Authors(s)</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Henry James</li>
+                            <li class="list-group-item">Bola Ade</li>
+                        </ul>
+                        <div class="card-footer text-primary">#yaml,#esl</div>
+                    </div><br>
+
+                     <div class="card">
+                        <div class="card-header">Project Files</div>
+                        <div class="card-body text-center">
+                            <h6 class="card-text text-muted">No file uploaded yet</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        </div>
 
-        <div class="file_table">
-         <table border="1">
-           <tr>
-               <th>Project Files</th>
-           </tr>
-           <tr>
-               <td rowspan="1">No file uploaded yet</td>
-           </tr>
-       </table>
-       </div>
-
-       </div>
-    <div class="viewProject_footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+    <div class="jumbotron footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
     </body>
 </html>

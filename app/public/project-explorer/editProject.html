@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-             <div class="navbar">
-            <a href="index.html">Project Explorer</a>
-            <input type="text" placeholder="Search Projects" id="search_item">
-            <button id="mybutton">Search</button>
-            <a href="search.html">Projects</a>
-            <a href="createProject.html">Submit</a>
-            <div class="icons">
-            <a href="register.html">Signed in As: Ade Ade</a>
-            <a href="login.html">Logout</a>
-            </div>
+        <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+
+            <a class = "navbar-brand" href="index.html">Project Explorer</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+
+            <form class="form-inline" role="form" name="prp">
+                <div class="form-group">
+                    <li class="nav-item">
+                    <input type="text" class="form-control" placeholder="Search Projects" id="search_item">
+                    </li>
+                </div>
+                    <li class="nav-item">
+                    <button type = "button" class = "btn btn-outline-light" id="mybutton">Search</button>
+                    </li>
+            </form>
+
+            <li class="nav-item">
+            <a href="search.html" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+            <a href="createProject.html" class="nav-link">Submit</a>
+            </li>
+
+            </ul>
+           
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a href="register.html" class="nav-link">Signed in as: <div class="text-white">Ade Ade</div></a>
+            </li>
+
+             <li class="nav-item">
+            <a href="login.html" class="nav-link">Logout</a>
+            </li>
+
+            </ul>
             </div>
         </nav>
-        
+    
+             <h3 class="edit_heading">Project 4</h3>
 
-        <div class="editProject">
-
-             <h1>Project 4</h1>
-            <div class="editProject_section5">
-
-            <div class="editProject_create">Created By : <br> Ade Ade</div>
-            <div class="editProject_date">Date Created : <br> 2020-08-04</div>
-            <div class="editProject_update">Last Updated : <br> 2020-08-04</div>
-            <button>View Project</button>
+            <div class="jumbotron container edit">
+                <div class="row">
+                    <div class="col edit_col1">
+                        Created By : <br> Ade Ade
+                    </div>
+                    <div class="col">
+                        Date Created : <br> 2020-08-04
+                    </div>
+                    <div class="col">
+                        Last Updated : <br> 2020-08-04
+                    </div>
+                    <div class="col">
+                    <button class="btn btn-primary view_btn">View Project</button>
+                    </div>
+                </div>
             </div>
 
-        <div class="editProject_section6">
+        <div class="container">
+            <div class="row">
+                <div class="col edit_col5">
+                     <h5>Edit Project</h5>
 
-        <div class="edit_section">
-        <h3>Edit Project</h3>
+                    <hr>
+                    <label for="pname">Project Name: </label><br>
+                    <input type="text" id="pname" class="form-control" name="pname" placeholder="Project 4"/><br>
 
-        <hr>
-        <label for="pname">Project Name: </label><br>
-        <input type="text" id="pname" name="pname" placeholder="Project 4"/><br><br>
+                   <label for="pabstract">Project Abstract: </label><br>
+                   <textarea id="pabstract" class="form-control" name="pabstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </textarea><br>
 
-         <label for="pabstract">Project Abstract: </label><br>
-        <textarea id="pabstract" name="pabstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptatevelit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</textarea><br><br>
+                    <label for="author">Author(s): </label><br>
+                    <input type="text" class="form-control" id="author" rows="4" cols="20"name="author" placeholder="Ade Ade, Brian James"/><br>
 
-        <label for="author">Author(s): </label><br>
-        <input type="text" id="author" rows="4" cols="20"name="author" placeholder="Ade Ade, Brian James"/><br><br>
+                    <label for="tag">Tag(s): </label><br>
+                    <input type="text" class="form-control" id="tag" name="tag" placeholder="#yaml,#ehs"><br>
 
-        <label for="tag">Tag(s): </label><br>
-        <input type="text" id="tag" name="tag" placeholder="#yaml,#ehs"><br><br>
-
-        <button id="edit_save">Save</button>
+                    <button class="btn btn-primary">Save</button>
+                </div>
+                
+                <div class="col edit_col6">
+                    <h5>Manage Project Files</h5>
+                    <hr>
+                    
+                    <div class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupField01">
+                            <label class="custom-file-label" for = "inputGroupField01">Click here to open browser</label>
+                        </div>
+                    </div>
+                    <hr>
+                
+                    <div class="card">
+                        <div class="card-header">Project Files</div>
+                        <div class="card-body text-center">
+                            <h6 class="card-text text-muted">No file uploaded yet</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="manage_section">
-
-        <h3>Manage Project Files</h3>
-        <hr>
-        <label for="file">Add Project File: </label><br>
-        <input placeholder="Click to Open File Browser" id="input_file"/>
-        <input type="file" id="file" name="file" ><br><br>
-        
-        <hr>
-         <div class="edit_table">
-         <table border="1">
-           <tr>
-               <th>Project Files</th>
-           </tr>
-           <tr>
-               <td rowspan="1">No file uploaded yet</td>
-           </tr>
-       </table>
-       </div>
-        </div>
-        </div>
-
-        </div>
-        <div class="editProject_footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+        <div class="jumbotron footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
     </body>
 </html>

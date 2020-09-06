@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-            <div class="navbar">
-            <a href="index.html">Project Explorer</a>
-            <input type="text" placeholder="Search Projects" id="search_item">
-            <button id="mybutton">Search</button>
-            <a href="search.html">Projects</a>
-            <a href="createProject.html">Submit</a>
-            <div class="icons">
-            <a href="register.html">Sign Up</a>
-            <a href="login.html">Login</a>
-            </div>
+         <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+
+            <a class = "navbar-brand" href="index.html">Project Explorer</a>
+
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+
+            <form class="form-inline" role="form" name="prp">
+                <div class="form-group">
+                    <li class="nav-item">
+                    <input type="text" class="form-control" placeholder="Search Projects" id="search_item">
+                    </li>
+                </div>
+                    <li class="nav-item">
+                    <button type = "button" class = "btn btn-outline-light" id="mybutton">Search</button>
+                    </li>
+            </form>
+
+            <li class="nav-item">
+            <a href="search.html" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+            <a href="createProject.html" class="nav-link">Submit</a>
+            </li>
+
+            </ul>
+           
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a href="register.html" class="nav-link">Sign Up</a>
+            </li>
+
+             <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+            </li>
+
+            </ul>
             </div>
         </nav>
-        <div class="login">
+        
+        <main>
+            <div class="login">
+
             <h1>Login</h1>
             <label for="email">Email Address: </label><br>
-            <input type="email" id="email" placeholder="Enter email"><br><br>
+            <input type="email" id="email" class = "form-control" placeholder="Enter email"><br>
             <label for="password">Password: </label><br>
-            <input type="password" id="pword" placeholder="Password"><br><br>
-            <button id="login1">Login</button>
-        </div>
-        <div class="footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+            <input type="password" id="pword" class="form-control" placeholder="Password"><br>
+            <button class="btn btn-primary">Login</button>
+
+            </div>
+        </main>
+
+        <div class="jumbotron footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
 
     </body>
 </html>

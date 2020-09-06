@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <nav>
-            <div class="navbar">
-            <a href="index.html">Project Explorer</a>
-            <input type="text" placeholder="Search Projects" id="search_item">
-            <button id="mybutton">Search</button>
-            <a href="search.html">Projects</a>
-            <a href="createProject.html">Submit</a>
-            <div class="icons">
-            <a href="register.html">Sign Up</a>
-            <a href="login.html">Login</a>
-            </div>
+          <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+
+            <a class = "navbar-brand" href="index.html">Project Explorer</a>
+
+            <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+
+            <form class="form-inline" role="form" name="prp">
+                <div class="form-group">
+                    <li class="nav-item">
+                    <input type="text" class="form-control" placeholder="Search Projects" id="search_item">
+                    </li>
+                </div>
+                    <li class="nav-item">
+                    <button type = "button" class = "btn btn-outline-light" id="mybutton">Search</button>
+                    </li>
+            </form>
+
+            <li class="nav-item">
+            <a href="search.html" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+            <a href="createProject.html" class="nav-link">Submit</a>
+            </li>
+
+            </ul>
+           
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            <a href="register.html" class="nav-link">Sign Up</a>
+            </li>
+
+             <li class="nav-item">
+            <a href="login.html" class="nav-link">Login</a>
+            </li>
+
+            </ul>
             </div>
         </nav>
-            <div class="sign">
 
-            <div class="section1">
-            <h1>Sign Up</h1>
-            <label for="fname">First Name: </label><br>
-            <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+        <h3 class="register_h3">Sign Up</h3>
 
-            <label for="email">Email Address: </label><br>
-            <input type="email" id="email" name="email" placeholder="Your Email Address"><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col register_col1">
+                    <label for="fname">First Name: </label><br>
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name"><br>
 
-            <label for="program">Program: </label><br>
-            <select name="program" id="program">
-                <option value="0">Choose...</option>
-                <option value="1" selected>Computer Science</option>
-                <option value="2">Public Health</option>
-                <option value="3">Computer Information Systems</option>
-            </select><br><br>
+                    <label for="email">Email Address: </label><br>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address"><br>
 
-            <button id="signup_button">Sign Up</button>
+                    <label for="program">Program: </label><br>
+                    <select name="program" id="program"  class="form-control">
+                        <option value="0">Choose...</option>
+                        <option value="1" selected>Computer Science</option>
+                        <option value="2">Public Health</option>
+                        <option value="3">Computer Information Systems</option>
+                    </select><br>
+
+                    <button class="btn btn-primary">Sign Up</button>
+           
+                </div>
+            
+                <div class="col register_col2">
+                    <label for="lname">Last Name: </label><br>
+                    <input type="text"  class="form-control" id="lname" name="lname" placeholder="Last Name"><br>
+
+                    <label for="pword">Password: </label><br>
+                    <input type="password"  class="form-control" id="pword" name="pword" placeholder="Your Password"/><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="mnumber">Matriculation Number: </label><br>
+                            <input type="text"  class="form-control" id="mnumber" name="mnumber" placeholder="e.g 16/2020"><br>
+                        </div>
+                        <div class="col">
+                            <label for="graduation">Graduation Year: </label><br>
+                            <select name="graduation" id="graduation"  class="form-control">
+                                <option value="0">Choose...</option>
+                                <option value="1">2020</option>
+                                <option value="2">2019</option>
+                                <option value="3">2015</option>
+                            </select><br>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="section2">
-            <label for="lname">Last Name: </label><br>
-            <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
-
-            <label for="pword">Password: </label><br>
-            <input type="password" id="pword" name="pword" placeholder="Your Password"/><br><br>
-
-            <div class="signup_section">
-
-            <div class="matricnumber">
-            <label for="mnumber">Matriculation Number: </label><br>
-            <input type="text" id="mnumber" name="mnumber" placeholder="e.g 16/2020"><br>
-            </div>
-
-            <div class="graduation">
-            <label for="graduation">Graduation Year: </label><br>
-            <select name="graduation" id="graduation">
-                <option value="0">Choose...</option>
-                <option value="1">2020</option>
-                <option value="2">2019</option>
-                <option value="3">2015</option>
-            </select><br><br>
-            </div>
-
-            </div>
-
-            </div>
-
-            </div>
-            <div class="footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
+            <div class="jumbotron footer">Project Explorer &copy; 2020 <b>Edconnect</b></div>
     </body>
 </html>
