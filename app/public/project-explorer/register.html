@@ -52,13 +52,19 @@
             <div class="row">
                 <div class="col register_col1">
                     <label for="fname">First Name: </label><br>
-                    <input type="text" class="form-control" id="fname" name="firstName" placeholder="First Name"><br>
+
+                    <form>
+                    <input name="firstName" class="form-control" id="fname" placeholder="First Name"><br>
+                    </form>
 
                     <label for="email">Email Address: </label><br>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address"><br>
+
+                    <form>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email Address"><br>
+                    </form>
 
                     <label for="program">Program: </label><br>
-                    <select name="program" id="program"  class="form-control">
+                    <select name="program" id="program" class="form-control">
                         <option value="0">Choose...</option>
                         <option value="1" selected>Computer Science</option>
                         <option value="2">Public Health</option>
@@ -70,20 +76,27 @@
                 </div>
             
                 <div class="col register_col2">
-                    <label for="lname">Last Name: </label><br>
-                    <input type="text"  class="form-control" id="lname" name="lname" placeholder="Last Name"><br>
 
-                    <label for="pword">Password: </label><br>
-                    <input type="password"  class="form-control" id="pword" name="pword" placeholder="Your Password"/><br>
+                <form>
+                    <div class="form-group">
+                        <label for="lname">Last Name: </label><br>
+                        <input type="text"  class="form-control" id="lname" placeholder="Last Name"><br>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pword">Password: </label><br>
+                        <input type="password"  class="form-control" id="pword" placeholder="Your Password"/><br>
+                    </div>
+                </form>
 
                     <div class="row">
                         <div class="col">
                             <label for="mnumber">Matriculation Number: </label><br>
-                            <input type="text"  class="form-control" id="mnumber" name="mnumber" placeholder="e.g 16/2020"><br>
+                            <input type="text"  class="form-control" id="mnumber" placeholder="e.g 16/2020"><br>
                         </div>
                         <div class="col">
                             <label for="graduation">Graduation Year: </label><br>
-                            <select name="graduation" id="graduation"  class="form-control">
+                            <select name="graduation" id="graduation" class="form-control">
                                 <option value="0">Choose...</option>
                                 <option value="1">2020</option>
                                 <option value="2">2019</option>
