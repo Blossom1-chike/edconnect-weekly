@@ -8,7 +8,13 @@ class DataModel {
     }
 
     getById(id) {
-
+       for(var i=0;i < this.data.length;i++){
+           const index = this.data[i];
+            if(index.id === id){
+                return index;
+            }
+        }
+       return null;
     }
 
     save(obj) {
@@ -20,11 +26,27 @@ class DataModel {
     }
 
     update(obj, id) {
-
+        for(var i=0;i < this.data.length;i++){
+            const index = this.data[i];
+            if(index.id === id){
+                for(var key in obj){
+                        index[key] = obj[key];
+                }
+                return true;
+            }
+        }
+       return false;
     }
 
     delete(id) {
-
+            for(var i=0;i < this.data.length;i++){
+                const index = this.data[i];
+                    if(index.id === id){
+                       this.data.splice(i,1);
+                       return true;
+                    }
+            }
+       return false;
     }
 
     // this method will be overriden in the sub classes
