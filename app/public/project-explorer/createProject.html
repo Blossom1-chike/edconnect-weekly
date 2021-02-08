@@ -7,32 +7,32 @@
             <h2>One Stop DataBase for Final Year Projects</h2>
         </header>
         <nav>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#">Home</a>
-            <a href="#">Projects</a>
-            <a href="#">Submit</a>
+           <a href="index.html">Home</a>
+            <a href="search.html">Projects</a>
             <a href="login.html">Login</a>
             <a href="register.html">Register</a>
+            <a href="createProject.html">Submit</a>
         </nav>
         
         <main>
-        <h3>Submit Project</h3>
+        <h1>Submit Project</h1>
+        
+        <form name="submitProject">
+        <label>Project Name: </label><br>
+        <input type="text" id="pname" name="name"/><br><br>
 
-        <label for="pname">Project Name: </label><br>
-        <input type="text" id="pname" name="pname"/><br><br>
-
-        <label for="pabstract">Project Abstract: </label><br>
-        <textarea id="pabstract" name="pabstract" rows="2" cols="20">
+        <label>Project Abstract: </label><br>
+        <textarea type="text" id="pabstract" name="abstract" rows="2" cols="20">
         </textarea><br><br>
 
-        <label for="author">Authors: </label><br>
-        <input type="text" id="author" name="author"/><br><br>
+        <label>Authors: </label><br>
+        <input type="text" id="author" name="authors"/><br><br>
 
-        <label for="tag">Tag(s): </label><br>
-        <input type="text" id="tag" name="tag"/><br><br>
+        <label>Tag(s): </label><br>
+        <input type="text" id="tag" name="tags"/><br><br>
 
         <input type="submit" value="Submit"> <br>
-        
+        </form>
         </main>
     </body>
 </html>
